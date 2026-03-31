@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#d96f1f">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/icon-192.png">
+  <link rel="apple-touch-icon" href="./images/icon-192.png">
+  <title>PDFconveniUSB</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script>
+    (function () {
+      var ua = navigator.userAgent || "";
+      var touchCapable = navigator.maxTouchPoints > 1;
+      var isSmallScreen = window.matchMedia && window.matchMedia("(max-width: 820px)").matches;
+      var isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(ua) || (touchCapable && isSmallScreen);
+      document.documentElement.dataset.mobile = isMobile ? "true" : "false";
+    }());
+  </script>
+</head>
+<body>
+  <div id="unsupported-screen" class="unsupported-screen" hidden>
+    <p>This app is not supported on iOS or Android.</p>
+  </div>
+
+  <div id="app-root" class="app-shell" hidden>
+    <main class="app-card">
+      <header class="hero">
+        <div class="brand-mark" aria-hidden="true">
+          <img src="./images/icon-512.png" alt="">
+        </div>
+        <div class="title-block">
+          <h1 id="app-title"></h1>
+          <p id="app-description" class="hero-description"></p>
+        </div>
+        <label class="language-panel" for="language-select">
+          <span id="language-label"></span>
+          <select id="language-select" aria-label="Language"></select>
+        </label>
+      </header>
+
+      <section class="panel">
+        <div
+          id="drop-zone"
+          class="drop-zone"
+          tabindex="0"
+          role="button"
+          aria-describedby="drop-guide"
+        >
+          <input id="file-input" type="file" accept="application/pdf" hidden>
+          <p id="drop-title" class="drop-zone-title"></p>
+          <p id="drop-guide" class="drop-zone-guide"></p>
+          <button id="select-file-button" class="primary-button" type="button"></button>
+        </div>
+      </section>
+
+      <section class="panel info-grid">
+        <div class="info-block">
+          <h2 id="status-heading"></h2>
+          <p id="status-message" class="status-message"></p>
+        </div>
+        <div class="info-block">
+          <h2 id="output-heading"></h2>
+          <ul id="output-list" class="output-list"></ul>
+        </div>
+      </section>
+
+      <nav class="back-link-bar">
+        <a id="back-to-top-link" class="secondary-link-button" href="../index.html"></a>
+      </nav>
+    </main>
+
+    <a
+      class="footer-logo-link"
+      href="https://www.rq-inn.com/"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="rq-inn"
+    >
+      <img src="./images/rq-inn-logo.png" alt="rq-inn">
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

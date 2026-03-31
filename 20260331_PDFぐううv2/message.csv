@@ -1,0 +1,25 @@
+key,name_L1,name_L2,name_L3
+app_kicker,CSV駆動多言語PWA,CSV Driven Multilingual PWA,CSV 驅動多語 PWA
+app_title,PDFぐうう v2.0,PDFぐうう v2.0,PDFぐうう v2.0
+app_description,複数のPDFを読み込み順に結合します。同時に選択したファイルはファイル名の昇順で追加されます。,Merge multiple PDFs in load order. Files selected together are added in ascending filename order.,依讀取順序合併多個 PDF。同時選取的檔案會依檔名升冪加入。
+language_label,表示言語,Language,顯示語言
+drop_title,PDFをここにドロップしてください,Drop your PDFs here,請將 PDF 拖曳到這裡
+drop_guide,複数選択に対応しています。あとから一覧でドラッグして並び替えできます。,You can select multiple files and drag them later in the list to reorder them.,支援多選，之後也可在清單中拖曳重新排序。
+select_file_button,PDFを選択,Choose PDFs,選擇 PDF
+status_heading,状態,Status,狀態
+file_list_heading,読み込みファイル,Loaded Files,已載入檔案
+file_list_guide,ドラッグ＆ドロップで結合順を並び替えできます。,Drag and drop to reorder the merge sequence.,可用拖放調整合併順序。
+output_heading,結合結果,Merged Output,合併結果
+download_button,結合PDFをダウンロード,Download merged PDF,下載合併 PDF
+file_list_empty,まだPDFは追加されていません。,No PDFs have been added yet.,尚未加入 PDF。
+output_empty,PDFを追加すると結合結果をダウンロードできます。,Add PDFs to enable merged output download.,加入 PDF 後即可下載合併結果。
+output_ready,{count}件を結合する準備ができました。出力名: {name} / {size},Ready to merge {count} file(s). Output: {name} / {size},已可合併 {count} 個檔案。輸出: {name} / {size}
+status_idle,PDFファイルを待機しています。,Waiting for PDF files.,等待 PDF 檔案。
+status_processing,{count}件のPDFを読み込んでいます。しばらくお待ちください。,Loading {count} PDF file(s). Please wait.,正在載入 {count} 個 PDF，請稍候。
+status_merge_ready,{count}件のPDFを結合できる状態です。,Ready to merge {count} PDF file(s).,已可合併 {count} 個 PDF。
+status_reordered,ファイル順を更新しました。,Updated the file order.,檔案順序已更新。
+status_invalid_file,PDFファイルを選択してください。,Please choose PDF files.,請選擇 PDF 檔案。
+status_partial_invalid,PDF以外のファイルを{count}件スキップしました。,Skipped {count} non-PDF file(s).,已略過 {count} 個非 PDF 檔案。
+status_invalid_pdf,PDFを読み込めませんでした。有効なPDFを確認してください。,Unable to read the PDF. Please confirm the file is valid.,無法讀取 PDF，請確認檔案有效。
+status_general_error,処理中にエラーが発生しました。もう一度お試しください。,An error occurred during processing. Please try again.,處理時發生錯誤，請再試一次。
+back_to_top,TOPへ戻る,Back to TOP,返回 TOP

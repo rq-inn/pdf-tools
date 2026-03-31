@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#d96f1f">
+  <title>PDFsuuu</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    (function () {
+      var ua = navigator.userAgent || "";
+      var touchCapable = navigator.maxTouchPoints > 1;
+      var isSmallScreen = window.matchMedia && window.matchMedia("(max-width: 820px)").matches;
+      var isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(ua) || (touchCapable && isSmallScreen);
+      document.documentElement.dataset.mobile = isMobile ? "true" : "false";
+    }());
+  </script>
+</head>
+<body>
+  <div id="unsupportedScreen" class="unsupported-screen" hidden>
+    <p>This app is not supported on iOS or Android.</p>
+  </div>
+
+  <div id="appRoot" class="app-shell" hidden>
+    <main class="app-card">
+      <header class="hero">
+        <div class="brand-mark" aria-hidden="true">
+          <img src="./images/icon-512.png" alt="">
+        </div>
+        <div class="title-block">
+          <h1 id="appTitle"></h1>
+          <p id="appDescription" class="hero-description"></p>
+        </div>
+        <section id="languageArea"></section>
+      </header>
+
+      <section id="controlArea"></section>
+      <section id="statusArea"></section>
+      <nav id="backArea" class="back-link-bar"></nav>
+    </main>
+
+    <a
+      class="footer-logo-link"
+      href="https://www.rq-inn.com/"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="rq-inn"
+    >
+      <img src="./images/rq-inn-logo.png" alt="rq-inn">
+    </a>
+  </div>
+
+  <footer id="osNotice" class="os-notice hidden"></footer>
+
+  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+  <script src="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+  <script>
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js";
+  </script>
+  <script src="./js/select_language.js"></script>
+  <script src="./js/select_file_folder.js"></script>
+  <script src="./js/folder_output.js"></script>
+  <script src="./js/extract_pdf.js"></script>
+  <script src="./js/normalize_text.js"></script>
+  <script src="./js/generate_txt.js"></script>
+  <script src="./js/os_detect.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

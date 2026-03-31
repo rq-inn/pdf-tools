@@ -1,0 +1,17 @@
+key,name_L1,name_L2,name_L3
+app_kicker,ルーンクエストPDFツール,RuneQuest PDF Tools,符文任務 PDF 工具
+app_title,PDFつーる,PDFtools,PDFtools
+app_description_line_1,これはルーンクエスト（RuneQuest）を楽しむためのPDF操作アプリです。,This is a PDF utility hub for enjoying RuneQuest.,這是為了享受 RuneQuest 而設計的 PDF 操作工具。
+app_description_line_2,分割・結合・抽出などの操作が簡単にできます。,You can easily split, merge, and extract PDFs.,可以輕鬆進行分割、合併與抽出等操作。
+language_label,表示言語,Language,顯示語言
+card_jump,開く,Open,開啟
+app_pdf_conveni_title,PDFコンビニUSB,PDFconveniUSB,PDFconveniUSB
+app_pdf_conveni_desc,PDFを1ファイル90枚のコンビニ印刷用PDFに分割します。,Split a PDF into convenience-store print files with up to 90 pages each.,將 PDF 分割成每個檔案最多 90 頁的超商列印用 PDF。
+app_pdf_choki_title,PDFちょき,PDF Chop,PDF Chop
+app_pdf_choki_desc,PDFを1ファイル10MB以下のGoogle翻訳用PDFに分割します。,Split a PDF into files under 10 MB for Google Translate.,將 PDF 分割成每個檔案 10MB 以下以便 Google 翻譯使用。
+app_pdf_guuu_title,PDFぐうう,PDF Merge,PDF Merge
+app_pdf_guuu_desc,複数PDFを結合して1ファイルのPDFにします。,Merge multiple PDFs into one PDF file.,將多個 PDF 合併成一個 PDF 檔案。
+app_pdf_pakka_title,PDFぱっか,PDF Mirror Book,PDF Mirror Book
+app_pdf_pakka_desc,右PDFと左PDFを交互に結合し、対訳本 Mirror Book を生成します。,Alternate left and right PDFs to generate a bilingual Mirror Book.,將左側與右側 PDF 交錯合併，生成對照用 Mirror Book。
+app_pdf_suuu_title,PDFすうう,PDF Text Extract,PDF Text Extract
+app_pdf_suuu_desc,PDFからAIが読みやすいTXTを抽出します。,Extract AI-friendly TXT from a PDF.,從 PDF 抽出適合 AI 閱讀的 TXT。

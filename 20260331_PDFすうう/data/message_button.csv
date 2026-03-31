@@ -1,0 +1,11 @@
+Number,L1,L2,L3
+MB1,English,日本語,繁体字
+MB2,Select the File to Load,読込ファイルを選択してください,請選擇要載入的文件
+MB3,Specify the destination Folder,保存先フォルダを指定してください,請指定目標資料夾
+MB4,Start,スタート,開始
+MB5,Please wait a moment,しばらくお待ちください,請稍等片刻
+MB6,Done,完了しました,完畢
+MB7,Save destination:,保存先:,保存目標:
+MB8,This PDF file cannot be handled as it contains large pages.,大容量ページを含んでいます。このPDFファイルは扱えません。,此PDF文件包含大量頁面，無法處理。
+MB9,This is an app that extracts text from PDFs.,これはPDFからテキストを吸い出すアプリです。,這是一個從PDF文件中提取文字的應用程式。
+MB10,Extracts TXT files from PDF files.,PDFファイルからTXTファイルを抽出します。,從PDF檔中提取TXT檔。

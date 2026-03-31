@@ -1,0 +1,21 @@
+key,name_L1,name_L2,name_L3
+app_kicker,CSV駆動多言語PWA,CSV Driven Multilingual PWA,CSV 驅動多語 PWA
+app_title,PDF縺｡繧・″ v2.0,PDF Chop v2.0,PDF 切分 v2.0
+app_description,PDFを1ファイル90枚の複数ファイルへページ単位で安全に分割します。,Safely split a PDF into page-based files of up to 90 pages each.,將 PDF 安全地依頁面切分成每個檔案最多 90 頁的多個檔案。
+language_label,表示言語,Language,顯示語言
+drop_title,PDFをここにドロップしてください,Drop your PDF here,請將 PDF 拖放到這裡
+drop_guide,または下のボタンからPDFファイルを選択してください。,Or choose a PDF file with the button below.,或使用下方按鈕選擇 PDF 檔案。
+select_file_button,PDFを選択,Choose PDF,選擇 PDF
+status_heading,状態,Status,狀態
+output_heading,出力ファイル,Output Files,輸出檔案
+status_idle,PDFファイルをお待ちしています。,Waiting for a PDF file.,等待 PDF 檔案。
+status_processing,PDFを解析して分割しています。しばらくお待ちください。,Analyzing and splitting the PDF. Please wait.,正在分析並切分 PDF，請稍候。
+status_already_small,このファイルはすでに10MB以下です。,This file is already 10 MB or smaller.,此檔案已經是 10MB 以下。
+status_single_page_too_large,10MBを超えるページを含みます。10MB以下に分割することはできません。,This PDF contains a page larger than 10 MB and cannot be split under 10 MB.,此 PDF 含有超過 10MB 的頁面，無法切分為 10MB 以下。
+status_split_complete,完了しました。次のファイルを選択してください。,Completed. Please choose the next file.,已完成。請選擇下一個檔案。
+status_invalid_file,PDFファイルを選択してください。,Please choose a PDF file.,請選擇 PDF 檔案。
+status_invalid_pdf,PDFを読み込めませんでした。有効なPDFか確認してください。,Unable to read the PDF. Please confirm the file is valid.,無法讀取 PDF。請確認檔案有效。
+status_processing_page_check,ページごとの容量を確認しています。,Checking the size of each page.,正在檢查每一頁的大小。
+status_processing_chunk,{from}ページ目から分割サイズを計測しています。,Measuring split sizes starting from page {from}.,正在從第 {from} 頁開始測量切分大小。
+output_file_label,ダウンロード {index}: {name} ({size}),Download {index}: {name} ({size}),下載 {index}: {name} ({size})
+status_general_error,処理中にエラーが発生しました。もう一度お試しください。,An error occurred during processing. Please try again.,處理時發生錯誤。請再試一次。

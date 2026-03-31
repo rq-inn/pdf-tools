@@ -1,0 +1,27 @@
+{
+  "name": "RuneQuest PDF Hub",
+  "short_name": "PDF Hub",
+  "description": "RuneQuest PDF tools launcher.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4eadf",
+  "theme_color": "#7d4a21",
+  "icons": [
+    {
+      "src": "./images/icon-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

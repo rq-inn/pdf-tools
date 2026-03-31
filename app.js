@@ -50,6 +50,8 @@ const elements = {
   launcherGrid: document.querySelector("#launcher-grid"),
 };
 
+registerServiceWorker();
+
 async function bootstrap() {
   const isMobile = document.documentElement.dataset.mobile === "true";
   document.body.dataset.mobile = isMobile ? "true" : "false";
@@ -230,6 +232,18 @@ function parseCsv(text) {
       return record;
     }, {}),
   );
+}
+
+async function registerServiceWorker() {
+  if (!("serviceWorker" in navigator)) {
+    return;
+  }
+
+  try {
+    await navigator.serviceWorker.register("./service-worker.js");
+  } catch (error) {
+    console.error("Service worker registration failed.", error);
+  }
 }
 
 bootstrap().catch((error) => {
